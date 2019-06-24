@@ -101,6 +101,7 @@ mix.webpackConfig({
   output: {
     publicPath: "/assets/",
     chunkFilename: "js/bundle-[name].js?id=[chunkhash]",
+    jsonpFunction: "getkirbyWebpackJsonpFunction", // needs a custom function name, otherwise it would collide with 3rd-party JavaScript (e.g. from Spreadshirt)
   },
   plugins: [
   ],
