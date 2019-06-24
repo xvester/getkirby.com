@@ -8,6 +8,7 @@
 body {
   background: #000;
 }
+
 .footer {
   background: #000 !important;
 }
@@ -95,29 +96,35 @@ body {
   background: #fff;
   padding: 1.5rem;
 }
+
 #kirbymerch .sprd-detail-images {
   margin-right: 1.5rem;
   padding: 0;
 }
+
 #kirbymerch .sprd-detail-images__view {
   background: #fff;
   border: 1px solid #ddd;
 }
+
 #kirbymerch .sprd-detail-images__view:hover,
 #kirbymerch .sprd-detail-images__view.sprd-c-m2 {
   border-color: #000;
   box-shadow: none;
 }
+
 #kirbymerch .sprd-slider__wrapper {
-  margin: 1.5rem;
   background: #fff;
   border-radius: 3px;
+  margin: 1.5rem;
 }
+
 #kirbymerch .sprd-detail-block {
+  align-content: stretch;
   border: 2px solid $color-yellow;
   display: flex;
-  align-content: stretch;
 }
+
 #kirbymerch .sprd-detail-price {
   font-size: 2rem;
   font-weight: 700;
@@ -133,20 +140,20 @@ body {
 }
 
 #kirbymerch .sprd-detail-product-type__heading {
+  display: none;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.125;
   margin-bottom: 1.5rem;
-  display: none;
 }
 
 #kirbymerch .sprd-detail-product-type__sub-heading {
-  font-size: .875rem;
   font-family: $font-mono;
+  font-size: .875rem;
   font-weight: 400;
   line-height: 1.5;
-  text-transform: uppercase;
   margin-bottom: .75rem;
+  text-transform: uppercase;
 }
 
 #kirbymerch .sprd-detail-product-type__column__wide:last-child {
@@ -192,9 +199,9 @@ body {
 }
 
 #kirbymerch .sprd-detail-block__detail-info {
+  background: #fff;
   border-left: 1px dashed #ddd;
   padding: 1.5rem;
-  background: #fff;
 }
 
 #kirbymerch .sprd-detail-info__text,
@@ -214,8 +221,6 @@ body {
   display: none !important;
 }
 
-
-
 #kirbymerch .sprd-blurry-slider {
   display: flex;
   justify-content: center;
@@ -232,8 +237,8 @@ body {
 
 #kirbymerch .sprd-button-secondary-cta-ghost:hover {
   background: $color-light-gray !important;
-  color: #000 !important;
   box-shadow: none !important;
+  color: #000 !important;
 }
 
 #kirbymerch .sprd-button-secondary-cta-ghost.sprd-bc-m2 {
@@ -253,14 +258,18 @@ body {
 #kirbymerch .sprd-detail-product-type__sub-container ul {
   margin-top: 1.5rem;
 }
+
 #kirbymerch .sprd-detail-product-type__sub-container li {
   margin: 0;
 }
 
 #kirbymerch .sprd-detail-product-type__size-guide {
   background: #fff;
+  color: rgba(60, 67, 80, .8);
+  font-size: .75rem;
   padding: .75rem;
 }
+
 #kirbymerch .sprd-detail-product-type__size-guide .sprd-img-spinner__image {
   filter: grayscale(1);
 }
@@ -281,28 +290,28 @@ body {
 }
 
 #kirbymerch .sprd-footer {
-  padding: .75rem 0 1.5rem;
   background: #313741;
+  padding: .75rem 0 1.5rem;
 
   & > * {
     background: none !important;
     color: $color-syntax-white !important;
   }
-
 }
 
 #kirbymerch .sprd-trusted-footer__message,
 #kirbymerch .sprd-footer-box__heading {
   color: $color-syntax-yellow;
 }
+
 #kirbymerch .sprd-trusted-footer__satisfaction {
   font-size: .875rem;
   padding: 0;
 }
 
 #kirbymerch .sprd-service-footer .sprd-footer-box {
-  padding: 1.5rem;
   border: 0;
+  padding: 1.5rem;
 
   @include mq(from l) {
     width: percentage(1 / 3);
@@ -312,26 +321,31 @@ body {
 #kirbymerch .sprd-trusted-footer__logo {
   color: #fff;
 }
+
 #kirbymerch .sprd-footer-box__phone {
   color: #fff;
   font-size: 1.25rem;
 }
+
 #kirbymerch .sprd-footer-box__times {
   padding-top: 0;
 }
+
 #kirbymerch .sprd-footer-box__icon {
-  width: 2rem;
   color: #fff;
+  width: 2rem;
 }
 
 #kirbymerch .sprd-footer-box__links a {
   color: currentColor !important;
-  text-decoration: underline;
   font-size: .875rem;
+  text-decoration: underline;
 }
+
 #kirbymerch .sprd-info-footer__links {
   padding-top: 1.5rem;
 }
+
 #kirbymerch .sprd-info-footer__link {
   text-decoration: underline;
 }
@@ -341,7 +355,11 @@ body {
 }
 
 #kirbymerch .sprd-product-list-item {
+  background: #fff;
   border: none !important;
+  height: 100%;
+  margin: 0;
+  width: auto;
 }
 
 #kirbymerch .sprd-product-list-item--hover {
@@ -360,9 +378,9 @@ body {
 }
 
 #kirbymerch .sprd-breadcrumb {
+  font-family: $font-mono;
   margin: -1.25rem 0 2rem;
   text-transform: none !important;
-  font-family: $font-mono;
 }
 
 #kirbymerch .sprd-detail-sizes {
@@ -389,38 +407,25 @@ body {
   content: "»";
 }
 
-#kirbymerch .sprd-detail-product-type__size-guide {
-  color: rgba(60, 67, 80, .8);
-  font-size: .75rem;
-}
-
 #kirbymerch .sprd-listpage {
-  padding: 0;
   margin-bottom: 3rem;
+  padding: 0;
 }
 
 #kirbymerch .sprd-product-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: .75rem;
+  grid-template-columns: 1fr 1fr;
 
   @include mq(from m) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-#kirbymerch .sprd-product-list-item {
-  background: #fff;
-  width: auto;
-  margin: 0;
-  height: 100%;
-}
+
 #kirbymerch .sprd-product-list-item__title {
-  display: none;
-}
-#kirbymerch .sprd-product-list-item__price {
+  font-size: .75rem;
   margin-top: 1.5rem;
 }
-
 
 #kirbymerch .sprd-detail-page {
   margin: 0;
@@ -429,7 +434,6 @@ body {
 #kirbymerch .sprd-info-footer {
   padding: 0;
 }
-
 
 #kirbymerch .sprd-detail-mobile-caption {
   background: #fff;

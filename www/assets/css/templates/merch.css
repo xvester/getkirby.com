@@ -441,10 +441,7 @@ body {
 }
 
 #kirbymerch .sprd-product-list-item__title {
-  display: none;
-}
-
-#kirbymerch .sprd-product-list-item__price {
+  font-size: .75rem;
   margin-top: 1.5rem;
 }
 

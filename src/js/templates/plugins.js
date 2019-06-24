@@ -1,4 +1,4 @@
-import List from 'list.js';
+import List from "list.js";
 
 var options = {
   listClass: "plugins-directory",
@@ -10,8 +10,8 @@ var options = {
   ],
 };
 
-var list      = new List('plugins', options);
-var container = document.getElementById('plugins');
+var list      = new List("plugins", options);
+var container = document.getElementById("plugins");
 
 list.on("updated", function (event) {
   if (event.searched === true) {
