@@ -30,6 +30,16 @@ return [
             go();
         }
     ],
+    [
+        'pattern' => 'merch/(:all?)',
+        'action'  => function ($path = null) {
+            // Redirect all requests to subpages of the merch
+            // page to main merch page for spreadshirt shop.
+            // This allows the shop script to use SEO-friendly
+            // URLs.
+            return page('merch');
+        },
+    ],
 
     /**
      * Legacy redirects

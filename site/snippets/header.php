@@ -21,17 +21,15 @@
 })(window, document);
 </script>
 
-<?php if (option('keycdn', false) !== false): ?>
-  <script>
-  window.kirbyConfig = {
-    assetsPath: "<?= addslashes(option('keycdn.domain')) ?>/assets/",
-  };
-  </script>
-<?php endif ?>
+<script>
+window.kirbyConfig = {
+  assetsPath: "<?= addslashes(option('keycdn.domain')) ?>/assets/",
+  pageUrl: "<?= $page->url() ?>",
+};
+</script>
 
 <?= js('assets/js/index.js', ['defer' => true]) ?>
 <?= js('@auto', ['defer' => true]) ?>
-
 
 </head>
 <body data-template="<?= $page->template() ?>">
