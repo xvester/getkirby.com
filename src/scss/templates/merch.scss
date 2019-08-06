@@ -291,12 +291,16 @@ body {
 
 #kirbymerch .sprd-footer {
   background: #313741;
-  padding: .75rem 0 1.5rem;
+  padding: 0;
 
   & > * {
     background: none !important;
     color: $color-syntax-white !important;
   }
+}
+
+#kirbymerch .sprd-info-footer__col {
+  text-align: left;
 }
 
 #kirbymerch .sprd-trusted-footer__message,
@@ -333,7 +337,6 @@ body {
 
 #kirbymerch .sprd-footer-box__icon {
   color: #fff;
-  width: 2rem;
 }
 
 #kirbymerch .sprd-footer-box__links a {
@@ -432,7 +435,10 @@ body {
 }
 
 #kirbymerch .sprd-info-footer {
-  padding: 0;
+  border: none;
+  font-size: .875rem;
+  justify-content: start;
+  padding: 1rem 0 0;
 }
 
 #kirbymerch .sprd-detail-mobile-caption {
